@@ -2,20 +2,11 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-:root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  /* ... semua isi :root kamu yang lain ... */
-  --border: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-}
-
-/* ... blok .dark kamu ... */
+/* ... isi :root dan .dark kamu biarkan saja ... */
 
 @layer base {
   * {
-    /* Ganti @apply border-border jadi begini supaya Tailwind nggak bingung */
+    /* Kita pakai CSS murni aja biar Tailwind gak protes */
     border-color: var(--border);
     outline-color: var(--ring);
   }
